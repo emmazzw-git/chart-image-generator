@@ -1,0 +1,21 @@
+{
+  "name": "chart-image-generator",
+  "version": "1.0.0",
+  "description": "generating chart image from a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "^0.20.0",
+    "chart.js": "^2.9.3",
+    "cheerio": "^1.0.0-rc.3",
+    "fs": "0.0.1-security",
+    "html2canvas": "^1.0.0-rc.7",
+    "http": "0.0.1-security",
+    "puppeteer": "^5.3.0"
+  }
+}

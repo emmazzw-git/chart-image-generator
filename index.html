@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Chart Image Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  </head>
+  <body style="padding:50px;">
+    <canvas id="myChart" width="600" height="600" ></canvas>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: {{chartLabel}},
+                datasets: [{
+                    label: 'height m',
+                    data: {{chartData}},
+                    backgroundColor: [
+                        'rgba(0,0,0,0)'
+                    ],
+                    borderColor: 'rgba(255, 0, 0, 0.6)',
+                    borderWidth: 1
+                }],
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Women\'s high jump world record progression chart'
+                }
+            }
+        });
+    </script>
+  </body>
+</html>
